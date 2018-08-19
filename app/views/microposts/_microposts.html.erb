@@ -10,6 +10,7 @@
         </div>
         <div>
           <p><%= micropost.content %></p>
+          <%= render 'favorites/like_button', micropost: micropost %>
         </div>
         <div>
           <% if current_user == micropost.user %>
